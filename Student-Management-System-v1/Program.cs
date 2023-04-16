@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Student_Management_System_v1.presenters;
+using Student_Management_System_v1.views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,10 @@ namespace Student_Management_System_v1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+
+            IMainView mainView = new MainView();
+            new MainPresenter(mainView);
+            Application.Run((Form)mainView);
         }
     }
 }
