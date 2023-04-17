@@ -4,7 +4,7 @@
     {
         string FirstName { get; set; }
         string LastName { get; set; }
-        string DOB { get; set; }
+        string DOB { get; }
         string AddressNo { get; set; }
         string AddressStreet { get; set; }
         string AddressCity { get; set; }
