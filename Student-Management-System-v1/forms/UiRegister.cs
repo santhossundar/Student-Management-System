@@ -1,13 +1,16 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
+using Student_Management_System_v1.presenters;
 using Student_Management_System_v1.views;
 
 namespace Student_Management_System_v1.forms
 {
     public partial class UiRegister : KryptonForm, IUiRegisterView
     {
+        UiRegisterPresenter presenter;
         public UiRegister()
         {
             InitializeComponent();
+            presenter = new UiRegisterPresenter(this);
         }
 
         public string FirstName { 
@@ -42,6 +45,11 @@ namespace Student_Management_System_v1.forms
         public string StdNo { 
             get => stdNoTxtBox.Text; 
             set => stdNoTxtBox.Text = value; 
+        }
+
+        private void btnAdd_Click(object sender, System.EventArgs e)
+        {
+            presenter.Perform();
         }
     }
 }
