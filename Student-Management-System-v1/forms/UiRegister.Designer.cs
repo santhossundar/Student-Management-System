@@ -277,21 +277,21 @@
             // 
             this.kryptonTextBox3.Location = new System.Drawing.Point(124, 43);
             this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(143, 23);
+            this.kryptonTextBox3.Size = new System.Drawing.Size(143, 20);
             this.kryptonTextBox3.TabIndex = 2;
             // 
             // kryptonTextBox4
             // 
             this.kryptonTextBox4.Location = new System.Drawing.Point(124, 80);
             this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.Size = new System.Drawing.Size(143, 23);
+            this.kryptonTextBox4.Size = new System.Drawing.Size(143, 20);
             this.kryptonTextBox4.TabIndex = 4;
             // 
             // kryptonTextBox5
             // 
             this.kryptonTextBox5.Location = new System.Drawing.Point(124, 114);
             this.kryptonTextBox5.Name = "kryptonTextBox5";
-            this.kryptonTextBox5.Size = new System.Drawing.Size(143, 23);
+            this.kryptonTextBox5.Size = new System.Drawing.Size(143, 20);
             this.kryptonTextBox5.TabIndex = 6;
             // 
             // UiRegister
