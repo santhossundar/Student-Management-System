@@ -4,6 +4,7 @@ namespace Student_Management_System_v1.models
 {
     public interface IStudent
     {
-        void SaveInfo(); 
+        void SaveInfo();
+        void GetData();
     }
 }

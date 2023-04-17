@@ -1,5 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
 using Student_Management_System_v1.services;
+using System.Collections;
+using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace Student_Management_System_v1.models
 {
@@ -12,8 +15,16 @@ namespace Student_Management_System_v1.models
         private string addrNo;
         private string addrStreet;
         private string addrCity;
-        private SQLDBConnection connection;
-        private MySqlConnection conn;
+        private DBConnection connection = new DBConnection();
+        private MySqlDataReader reader = null;
+
+        public static List<string> stdIDList;
+        public static List<string> firstNameList;
+        public static List<string> lastNameList;
+        public static List<string> DOBList;
+        public static List<string> addrNoList;
+        public static List<string> addrStreetList;
+        public static List<string> addrCityList;
 
         public Student(string stdID, 
             string firstName, 
@@ -32,11 +43,19 @@ namespace Student_Management_System_v1.models
             this.addrCity = addrCity;
         }
 
+        public void GetData()
+        {
+            connection.Connect();
+            string query = "select * from student;";
+            reader = connection.ExcecuteCommand(query);
+
+            connection.DisConnect();
+            
+        }
+
         public void SaveInfo()
         {
-            connection = new SQLDBConnection();
-            conn = connection.Connect();
-            conn.Open();
+            connection.Connect();
 
             string query = "insert into student values('"
                 + stdID + "','"
@@ -47,9 +66,8 @@ namespace Student_Management_System_v1.models
                 + addrStreet + "','"
                 + addrCity + "');";
 
-            MySqlCommand cmd = new MySqlCommand(query, conn);
-            cmd.ExecuteReader();
-            conn.Close();
+            connection.ExcecuteCommand(query);
+            connection.DisConnect();
         }
     }
 }
