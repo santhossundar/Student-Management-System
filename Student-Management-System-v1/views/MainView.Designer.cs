@@ -1,6 +1,6 @@
 ﻿namespace Student_Management_System_v1
 {
-    partial class Main
+    partial class MainView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainView));
             this.LeftPanel = new System.Windows.Forms.Panel();
             this.LeftPanelCourse = new System.Windows.Forms.Panel();
             this.PanelCourse = new System.Windows.Forms.Panel();
@@ -50,9 +50,11 @@
             this.BtnMinimize = new System.Windows.Forms.PictureBox();
             this.BtnMaximize = new System.Windows.Forms.PictureBox();
             this.BtnClose = new System.Windows.Forms.PictureBox();
-            this.PanelContent = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.PanelChildForm = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.LeftPanel.SuspendLayout();
             this.LeftPanelCourse.SuspendLayout();
             this.PanelCourse.SuspendLayout();
@@ -67,8 +69,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnClose)).BeginInit();
-            this.PanelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.PanelChildForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // LeftPanel
@@ -358,17 +361,6 @@
             this.BtnClose.TabIndex = 0;
             this.BtnClose.TabStop = false;
             // 
-            // PanelContent
-            // 
-            this.PanelContent.BackColor = System.Drawing.Color.MidnightBlue;
-            this.PanelContent.Controls.Add(this.label2);
-            this.PanelContent.Controls.Add(this.pictureBox2);
-            this.PanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContent.Location = new System.Drawing.Point(197, 67);
-            this.PanelContent.Name = "PanelContent";
-            this.PanelContent.Size = new System.Drawing.Size(667, 422);
-            this.PanelContent.TabIndex = 2;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -390,16 +382,46 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // Main
+            // PanelChildForm
+            // 
+            this.PanelChildForm.Controls.Add(this.label3);
+            this.PanelChildForm.Controls.Add(this.pictureBox3);
+            this.PanelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelChildForm.Location = new System.Drawing.Point(197, 67);
+            this.PanelChildForm.Name = "PanelChildForm";
+            this.PanelChildForm.Size = new System.Drawing.Size(667, 422);
+            this.PanelChildForm.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(174, 70);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(280, 216);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(180, 323);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(274, 25);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Student Management System";
+            // 
+            // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(864, 489);
-            this.Controls.Add(this.PanelContent);
+            this.Controls.Add(this.PanelChildForm);
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.LeftPanel);
-            this.Name = "Main";
+            this.Name = "MainView";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Management System";
@@ -419,9 +441,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnClose)).EndInit();
-            this.PanelContent.ResumeLayout(false);
-            this.PanelContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.PanelChildForm.ResumeLayout(false);
+            this.PanelChildForm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -445,13 +468,15 @@
         private System.Windows.Forms.Panel PanelStudent;
         private FontAwesome.Sharp.IconButton BtnManageStudent;
         private FontAwesome.Sharp.IconButton BtnAddStudent;
-        private System.Windows.Forms.Panel PanelContent;
         private System.Windows.Forms.PictureBox BtnClose;
         private System.Windows.Forms.PictureBox BtnMinimize;
         private System.Windows.Forms.PictureBox BtnMaximize;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel PanelChildForm;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

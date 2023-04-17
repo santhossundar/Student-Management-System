@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Student_Management_System_v1.forms;
 using Student_Management_System_v1.presenters;
 using Student_Management_System_v1.views;
 using System;
@@ -8,9 +9,15 @@ using System.Windows.Forms;
 
 namespace Student_Management_System_v1
 {
-    public partial class Main : Form, IMainView
+    public partial class MainView : Form, IMainView
     {
-        public Main()
+        MainPresenter presenter;
+
+        public System.Windows.Forms.Panel ChildFormPanel { 
+            get => PanelChildForm;  
+        }
+
+        public MainView()
         {
             InitializeComponent();
             Design();
@@ -32,6 +39,10 @@ namespace Student_Management_System_v1
                 PanelCourse.Visible = false;
                 PanelStudent.Visible = true;
                 StudentBtnClicked?.Invoke(this, EventArgs.Empty);
+
+                /*
+                
+                */
             };
 
             BtnAddStudent.Click += delegate
@@ -92,7 +103,8 @@ namespace Student_Management_System_v1
             PanelStudent.Visible = false;
             PanelCourse.Visible = false;
             TopPanel.BackColor = Color.FromArgb(0, 92, 184);
-            PanelContent.BackColor = Color.FromArgb(0, 117, 235);
+            //PanelContent.BackColor = Color.FromArgb(0, 117, 235);
+   
         }
 
         [DllImport("user32.DLL", EntryPoint="ReleaseCapture")]
