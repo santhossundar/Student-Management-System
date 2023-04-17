@@ -39,7 +39,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.nav_btn_add = new System.Windows.Forms.Button();
+            this.NavBtnRegister = new System.Windows.Forms.Button();
             this.nav_btn_student = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -174,7 +174,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.nav_btn_add);
+            this.panel2.Controls.Add(this.NavBtnRegister);
             this.panel2.Location = new System.Drawing.Point(1, 190);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(190, 100);
@@ -195,20 +195,21 @@
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // nav_btn_add
+            // NavBtnRegister
             // 
-            this.nav_btn_add.FlatAppearance.BorderSize = 0;
-            this.nav_btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.nav_btn_add.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nav_btn_add.ForeColor = System.Drawing.Color.White;
-            this.nav_btn_add.Location = new System.Drawing.Point(-1, 0);
-            this.nav_btn_add.Name = "nav_btn_add";
-            this.nav_btn_add.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.nav_btn_add.Size = new System.Drawing.Size(191, 45);
-            this.nav_btn_add.TabIndex = 3;
-            this.nav_btn_add.Text = "Register";
-            this.nav_btn_add.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.nav_btn_add.UseVisualStyleBackColor = true;
+            this.NavBtnRegister.FlatAppearance.BorderSize = 0;
+            this.NavBtnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NavBtnRegister.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavBtnRegister.ForeColor = System.Drawing.Color.White;
+            this.NavBtnRegister.Location = new System.Drawing.Point(-1, 0);
+            this.NavBtnRegister.Name = "NavBtnRegister";
+            this.NavBtnRegister.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.NavBtnRegister.Size = new System.Drawing.Size(191, 45);
+            this.NavBtnRegister.TabIndex = 3;
+            this.NavBtnRegister.Text = "Register";
+            this.NavBtnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NavBtnRegister.UseVisualStyleBackColor = true;
+            this.NavBtnRegister.Click += new System.EventHandler(this.NavBtnRegister_Click);
             // 
             // nav_btn_student
             // 
@@ -325,7 +326,7 @@
         private System.Windows.Forms.Button nav_btn_student;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button nav_btn_add;
+        private System.Windows.Forms.Button NavBtnRegister;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;

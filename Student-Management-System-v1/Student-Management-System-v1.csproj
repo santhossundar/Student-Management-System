@@ -73,6 +73,7 @@
     <Compile Include="forms\UiMain.Designer.cs">
       <DependentUpon>UiMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="presenters\UiMainPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="views\IUiMainView.cs" />
