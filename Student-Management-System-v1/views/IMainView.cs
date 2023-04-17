@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Student_Management_System_v1.views
 {
@@ -11,7 +12,8 @@ namespace Student_Management_System_v1.views
         event EventHandler CourseBtnClicked;
         event EventHandler CourseAddBtnClicked;
         event EventHandler CourseManageBtnClicked;
-
         event EventHandler TopPanelMouseDown;
+
+        Panel ChildFormPanel { get; }
     }
 }
