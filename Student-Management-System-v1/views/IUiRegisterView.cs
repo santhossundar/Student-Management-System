@@ -4,10 +4,10 @@
     {
         string FirstName { get; set; }
         string LastName { get; set; }
+        string DOB { get; set; }
         string AddressNo { get; set; }
         string AddressStreet { get; set; }
         string AddressCity { get; set; }
-        string DOB { get; set; }
-        string StudentNo { get; set; }
+        string StdNo { get; set; }
     }
 }
