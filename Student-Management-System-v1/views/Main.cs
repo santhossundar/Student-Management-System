@@ -1,16 +1,17 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
 using Student_Management_System_v1.presenters;
 using Student_Management_System_v1.views;
+using System;
 
 namespace Student_Management_System_v1
 {
-    public partial class UiMain : KryptonForm, IUiMainView
+    public partial class Main : KryptonForm, IMainView
     {
-        private UiMainPresenter presenter;
-        public UiMain()
+        private MainPresenter mainPresenter;
+        public Main()
         {
             InitializeComponent();
-            presenter = new UiMainPresenter(this);
+            mainPresenter = new MainPresenter(this);
         }
 
         public int MaleCount { 
@@ -23,9 +24,11 @@ namespace Student_Management_System_v1
             set => throw new System.NotImplementedException(); 
         }
 
+        public event EventHandler NavRegisterBtnClicked;
+
         private void NavBtnRegister_Click(object sender, System.EventArgs e)
         {
-            presenter.Perform();
+            mainPresenter.Perform();
         }
     }
 }

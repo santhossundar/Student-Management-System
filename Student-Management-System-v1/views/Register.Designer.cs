@@ -1,6 +1,6 @@
 ﻿namespace Student_Management_System_v1.forms
 {
-    partial class UiRegister
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.
