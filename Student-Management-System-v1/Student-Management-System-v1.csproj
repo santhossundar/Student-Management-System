@@ -65,16 +65,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="forms\UiRegister.cs">
+    <Compile Include="views\UiRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\UiRegister.Designer.cs">
+    <Compile Include="views\UiRegister.Designer.cs">
       <DependentUpon>UiRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\UiMain.cs">
+    <Compile Include="views\UiMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\UiMain.Designer.cs">
+    <Compile Include="views\UiMain.Designer.cs">
       <DependentUpon>UiMain.cs</DependentUpon>
     </Compile>
     <Compile Include="models\IStudent.cs" />
@@ -86,10 +86,10 @@
     <Compile Include="services\SQLDBConnection.cs" />
     <Compile Include="views\IUiMainView.cs" />
     <Compile Include="views\IUiRegisterView.cs" />
-    <EmbeddedResource Include="forms\UiRegister.resx">
+    <EmbeddedResource Include="views\UiRegister.resx">
       <DependentUpon>UiRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\UiMain.resx">
+    <EmbeddedResource Include="views\UiMain.resx">
       <DependentUpon>UiMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
