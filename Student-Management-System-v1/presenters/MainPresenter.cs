@@ -3,17 +3,17 @@ using Student_Management_System_v1.views;
 
 namespace Student_Management_System_v1.presenters
 {
-    public class UiMainPresenter
+    public class MainPresenter
     {
-        private IUiMainView uiMainView;
-        public UiMainPresenter(IUiMainView uiMainView) 
+        private IMainView uiMainView;
+        public MainPresenter(IMainView uiMainView) 
         {
             this.uiMainView = uiMainView;
         }
 
         public void Perform()
         {
-            UiRegister uiRegister = new UiRegister();
+            Register uiRegister = new Register();
             uiRegister.Show();
         }
     }
