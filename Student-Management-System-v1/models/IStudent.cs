@@ -4,6 +4,6 @@ namespace Student_Management_System_v1.models
 {
     public interface IStudent
     {
-        List<string> SetInfo(); 
+        void SaveInfo(); 
     }
 }
