@@ -58,9 +58,9 @@ namespace Student_Management_System_v1.forms
 
         public event EventHandler AddBtnClicked;
 
-        private void btnAdd_Click(object sender, System.EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            registerPresenter.SaveInfo();
+            AddBtnClicked?.Invoke(this, e);
         }
     }
 }
