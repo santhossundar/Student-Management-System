@@ -1,15 +1,15 @@
-﻿using ComponentFactory.Krypton.Toolkit;
-using Student_Management_System_v1.presenters;
+﻿using Student_Management_System_v1.presenters;
 using Student_Management_System_v1.views;
 using System;
+using System.Windows.Forms;
 
 namespace Student_Management_System_v1.forms
 {
-    public partial class Register : KryptonForm, IRegisterView
+    public partial class RegisterView : Form, IRegisterView
     {
         RegisterPresenter registerPresenter;
 
-        public Register()
+        public RegisterView()
         {
             InitializeComponent();
             registerPresenter = new RegisterPresenter(this);
