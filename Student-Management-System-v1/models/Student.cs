@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Windows.Forms;
+﻿using MySql.Data.MySqlClient;
+using Student_Management_System_v1.services;
 
 namespace Student_Management_System_v1.models
 {
@@ -12,6 +12,8 @@ namespace Student_Management_System_v1.models
         private string addrNo;
         private string addrStreet;
         private string addrCity;
+        private SQLDBConnection connection;
+        private MySqlConnection conn;
 
         public Student(string stdID, 
             string firstName, 
@@ -32,8 +34,22 @@ namespace Student_Management_System_v1.models
 
         public void SaveInfo()
         {
-            // Sql code to insert the data
-            MessageBox.Show("Saved");
+            connection = new SQLDBConnection();
+            conn = connection.Connect();
+            conn.Open();
+
+            string query = "insert into student values('"
+                + stdID + "','"
+                + firstName + "','"
+                + lastName + "','"
+                + DOB + "','"
+                + addrNo + "','"
+                + addrStreet + "','"
+                + addrCity + "');";
+
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.ExecuteReader();
+            conn.Close();
         }
     }
 }
