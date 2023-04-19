@@ -1,5 +1,6 @@
 ﻿using Student_Management_System_v1.models;
 using Student_Management_System_v1.views;
+using System;
 using System.Collections.Generic;
 
 namespace Student_Management_System_v1.presenters
@@ -12,6 +13,8 @@ namespace Student_Management_System_v1.presenters
         public RegisterPresenter(IRegisterView registerView) 
         {
             this.registerView = registerView;
+
+            registerView.AddBtnClicked += SaveInfo;
         }
 
         private void BindModelView()
@@ -27,7 +30,7 @@ namespace Student_Management_System_v1.presenters
                 );   
         }
 
-        public void SaveInfo()
+        public void SaveInfo(object sender, EventArgs e)
         {
             BindModelView();
             student.SaveInfo();
