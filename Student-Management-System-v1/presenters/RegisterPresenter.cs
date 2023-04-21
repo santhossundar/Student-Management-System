@@ -19,7 +19,7 @@ namespace Student_Management_System_v1.presenters
 
         private void BindModelView()
         {
-            student = new Student(
+            student = new models.Student(
                 registerView.StdNo,
                 registerView.FirstName,
                 registerView.LastName,
