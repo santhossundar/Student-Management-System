@@ -22,5 +22,15 @@ namespace Student_Management_System_v1.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("SERVER=localhost; DATABASE=student_db; UID=root; PASSWORD=toor")]
+        public string SQLConnection {
+            get {
+                return ((string)(this["SQLConnection"]));
+            }
+        }
     }
 }

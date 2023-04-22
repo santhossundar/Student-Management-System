@@ -113,12 +113,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="presenters\StudentPresenter.cs" />
+    <Compile Include="repositories\BaseRepository.cs" />
+    <Compile Include="repositories\IStudentRepository.cs" />
+    <Compile Include="repositories\StudentRepository.cs" />
     <Compile Include="views\IStudentView.cs" />
-    <Compile Include="views\RegisterView.cs">
+    <Compile Include="views\StudentAddView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\RegisterView.Designer.cs">
-      <DependentUpon>RegisterView.cs</DependentUpon>
+    <Compile Include="views\StudentAddView.Designer.cs">
+      <DependentUpon>StudentAddView.cs</DependentUpon>
     </Compile>
     <Compile Include="views\MainView.cs">
       <SubType>Form</SubType>
@@ -126,23 +129,27 @@
     <Compile Include="views\MainView.Designer.cs">
       <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
-    <Compile Include="models\IStudent.cs" />
-    <Compile Include="models\Student.cs" />
+    <Compile Include="models\StudentModel.cs" />
     <Compile Include="presenters\MainPresenter.cs" />
-    <Compile Include="presenters\RegisterPresenter.cs" />
+    <Compile Include="presenters\StudentAddPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="services\DBConnection.cs" />
     <Compile Include="views\IMainView.cs" />
-    <Compile Include="views\IRegisterView.cs" />
+    <Compile Include="views\IStudentAddView.cs" />
+    <Compile Include="views\StudentManageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\StudentManageView.Designer.cs">
+      <DependentUpon>StudentManageView.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\StudentView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\StudentView.Designer.cs">
       <DependentUpon>StudentView.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="views\RegisterView.resx">
-      <DependentUpon>RegisterView.cs</DependentUpon>
+    <EmbeddedResource Include="views\StudentAddView.resx">
+      <DependentUpon>StudentAddView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
@@ -157,6 +164,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="views\StudentManageView.resx">
+      <DependentUpon>StudentManageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\StudentView.resx">
       <DependentUpon>StudentView.cs</DependentUpon>
     </EmbeddedResource>
