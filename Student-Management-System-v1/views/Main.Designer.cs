@@ -28,317 +28,430 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.NavBtnRegister = new System.Windows.Forms.Button();
-            this.nav_btn_student = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.LeftPanel = new System.Windows.Forms.Panel();
+            this.LeftPanelCourse = new System.Windows.Forms.Panel();
+            this.PanelCourse = new System.Windows.Forms.Panel();
+            this.BtnManageCourse = new FontAwesome.Sharp.IconButton();
+            this.BtnAddCourse = new FontAwesome.Sharp.IconButton();
+            this.BtnCourse = new FontAwesome.Sharp.IconButton();
+            this.LeftPanelStudent = new System.Windows.Forms.Panel();
+            this.PanelStudent = new System.Windows.Forms.Panel();
+            this.BtnManageStudent = new FontAwesome.Sharp.IconButton();
+            this.BtnAddStudent = new FontAwesome.Sharp.IconButton();
+            this.BtnStudent = new FontAwesome.Sharp.IconButton();
+            this.LeftPanelTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.LeftPanelPicBoxLogo = new System.Windows.Forms.PictureBox();
+            this.TopPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.tb_male_count = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.tb_female_count = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.PanelUserControls = new System.Windows.Forms.Panel();
+            this.BtnMinimize = new System.Windows.Forms.PictureBox();
+            this.BtnMaximize = new System.Windows.Forms.PictureBox();
+            this.BtnClose = new System.Windows.Forms.PictureBox();
+            this.PanelContent = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.LeftPanel.SuspendLayout();
+            this.LeftPanelCourse.SuspendLayout();
+            this.PanelCourse.SuspendLayout();
+            this.LeftPanelStudent.SuspendLayout();
+            this.PanelStudent.SuspendLayout();
+            this.LeftPanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftPanelPicBoxLogo)).BeginInit();
+            this.TopPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.PanelUserControls.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnClose)).BeginInit();
+            this.PanelContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // kryptonPalette1
+            // LeftPanel
             // 
-            this.kryptonPalette1.FormStyles.FormCommon.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonPalette1.FormStyles.FormCommon.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonPalette1.FormStyles.FormCommon.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.kryptonPalette1.FormStyles.FormCommon.StateCommon.Border.Color1 = System.Drawing.Color.White;
-            this.kryptonPalette1.FormStyles.FormCommon.StateCommon.Border.Color2 = System.Drawing.Color.White;
-            this.kryptonPalette1.FormStyles.FormCommon.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonPalette1.FormStyles.FormCommon.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.Rounding = 10;
-            this.kryptonPalette1.GridStyles.GridCommon.StateCommon.Background.Color1 = System.Drawing.Color.White;
-            this.kryptonPalette1.GridStyles.GridCommon.StateCommon.Background.Color2 = System.Drawing.Color.White;
-            this.kryptonPalette1.GridStyles.GridCommon.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
-            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonPalette1.PanelStyles.PanelCommon.StateCommon.Color1 = System.Drawing.Color.White;
-            this.kryptonPalette1.PanelStyles.PanelCommon.StateCommon.Color2 = System.Drawing.Color.White;
-            this.kryptonPalette1.PanelStyles.PanelCommon.StateCommon.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonPalette1.PanelStyles.PanelCommon.StateNormal.Color1 = System.Drawing.Color.White;
-            this.kryptonPalette1.PanelStyles.PanelCommon.StateNormal.Color2 = System.Drawing.Color.White;
-            this.kryptonPalette1.PanelStyles.PanelCustom1.StateCommon.Color1 = System.Drawing.Color.Red;
-            this.kryptonPalette1.PanelStyles.PanelCustom1.StateCommon.Color2 = System.Drawing.Color.Red;
-            this.kryptonPalette1.PanelStyles.PanelCustom1.StateCommon.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonPalette1.PanelStyles.PanelCustom1.StateNormal.Color1 = System.Drawing.Color.White;
-            this.kryptonPalette1.PanelStyles.PanelCustom1.StateNormal.Color2 = System.Drawing.Color.White;
+            this.LeftPanel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.LeftPanel.Controls.Add(this.LeftPanelCourse);
+            this.LeftPanel.Controls.Add(this.LeftPanelStudent);
+            this.LeftPanel.Controls.Add(this.LeftPanelTop);
+            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
+            this.LeftPanel.Name = "LeftPanel";
+            this.LeftPanel.Size = new System.Drawing.Size(197, 489);
+            this.LeftPanel.TabIndex = 0;
             // 
-            // panel1
+            // LeftPanelCourse
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.nav_btn_student);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(191, 551);
-            this.panel1.TabIndex = 0;
+            this.LeftPanelCourse.AutoSize = true;
+            this.LeftPanelCourse.Controls.Add(this.PanelCourse);
+            this.LeftPanelCourse.Controls.Add(this.BtnCourse);
+            this.LeftPanelCourse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LeftPanelCourse.Location = new System.Drawing.Point(0, 285);
+            this.LeftPanelCourse.Name = "LeftPanelCourse";
+            this.LeftPanelCourse.Size = new System.Drawing.Size(197, 165);
+            this.LeftPanelCourse.TabIndex = 3;
             // 
-            // panel3
+            // PanelCourse
             // 
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button8);
-            this.panel3.Location = new System.Drawing.Point(1, 335);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(190, 155);
-            this.panel3.TabIndex = 6;
+            this.PanelCourse.Controls.Add(this.BtnManageCourse);
+            this.PanelCourse.Controls.Add(this.BtnAddCourse);
+            this.PanelCourse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelCourse.Location = new System.Drawing.Point(0, 53);
+            this.PanelCourse.Name = "PanelCourse";
+            this.PanelCourse.Size = new System.Drawing.Size(197, 112);
+            this.PanelCourse.TabIndex = 2;
             // 
-            // button6
+            // BtnManageCourse
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(-1, 96);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(191, 45);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Student";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
+            this.BtnManageCourse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnManageCourse.FlatAppearance.BorderSize = 0;
+            this.BtnManageCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnManageCourse.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManageCourse.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnManageCourse.IconChar = FontAwesome.Sharp.IconChar.Dashboard;
+            this.BtnManageCourse.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnManageCourse.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnManageCourse.IconSize = 30;
+            this.BtnManageCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnManageCourse.Location = new System.Drawing.Point(0, 52);
+            this.BtnManageCourse.Name = "BtnManageCourse";
+            this.BtnManageCourse.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.BtnManageCourse.Size = new System.Drawing.Size(197, 52);
+            this.BtnManageCourse.TabIndex = 1;
+            this.BtnManageCourse.Text = "Manage";
+            this.BtnManageCourse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnManageCourse.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // BtnAddCourse
             // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(-1, 48);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(191, 45);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "Manage";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = true;
+            this.BtnAddCourse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnAddCourse.FlatAppearance.BorderSize = 0;
+            this.BtnAddCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAddCourse.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddCourse.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnAddCourse.IconChar = FontAwesome.Sharp.IconChar.Add;
+            this.BtnAddCourse.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnAddCourse.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnAddCourse.IconSize = 30;
+            this.BtnAddCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAddCourse.Location = new System.Drawing.Point(0, 0);
+            this.BtnAddCourse.Name = "BtnAddCourse";
+            this.BtnAddCourse.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.BtnAddCourse.Size = new System.Drawing.Size(197, 52);
+            this.BtnAddCourse.TabIndex = 0;
+            this.BtnAddCourse.Text = "Add";
+            this.BtnAddCourse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAddCourse.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // BtnCourse
             // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(-4, 3);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(191, 45);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Add";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = true;
+            this.BtnCourse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCourse.FlatAppearance.BorderSize = 0;
+            this.BtnCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCourse.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCourse.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnCourse.IconChar = FontAwesome.Sharp.IconChar.GraduationCap;
+            this.BtnCourse.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnCourse.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCourse.IconSize = 30;
+            this.BtnCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCourse.Location = new System.Drawing.Point(0, 0);
+            this.BtnCourse.Name = "BtnCourse";
+            this.BtnCourse.Size = new System.Drawing.Size(197, 53);
+            this.BtnCourse.TabIndex = 0;
+            this.BtnCourse.Text = "Course";
+            this.BtnCourse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnCourse.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // LeftPanelStudent
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 292);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(191, 45);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Course";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
+            this.LeftPanelStudent.AutoSize = true;
+            this.LeftPanelStudent.Controls.Add(this.PanelStudent);
+            this.LeftPanelStudent.Controls.Add(this.BtnStudent);
+            this.LeftPanelStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LeftPanelStudent.Location = new System.Drawing.Point(0, 120);
+            this.LeftPanelStudent.Name = "LeftPanelStudent";
+            this.LeftPanelStudent.Size = new System.Drawing.Size(197, 165);
+            this.LeftPanelStudent.TabIndex = 2;
             // 
-            // panel2
+            // PanelStudent
             // 
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.NavBtnRegister);
-            this.panel2.Location = new System.Drawing.Point(1, 190);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(190, 100);
-            this.panel2.TabIndex = 1;
+            this.PanelStudent.Controls.Add(this.BtnManageStudent);
+            this.PanelStudent.Controls.Add(this.BtnAddStudent);
+            this.PanelStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelStudent.Location = new System.Drawing.Point(0, 53);
+            this.PanelStudent.Name = "PanelStudent";
+            this.PanelStudent.Size = new System.Drawing.Size(197, 112);
+            this.PanelStudent.TabIndex = 1;
             // 
-            // button3
+            // BtnManageStudent
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(-1, 48);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(191, 45);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Manage";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnManageStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnManageStudent.FlatAppearance.BorderSize = 0;
+            this.BtnManageStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnManageStudent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManageStudent.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnManageStudent.IconChar = FontAwesome.Sharp.IconChar.Dashboard;
+            this.BtnManageStudent.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnManageStudent.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnManageStudent.IconSize = 30;
+            this.BtnManageStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnManageStudent.Location = new System.Drawing.Point(0, 52);
+            this.BtnManageStudent.Name = "BtnManageStudent";
+            this.BtnManageStudent.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.BtnManageStudent.Size = new System.Drawing.Size(197, 52);
+            this.BtnManageStudent.TabIndex = 1;
+            this.BtnManageStudent.Text = "Manage";
+            this.BtnManageStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnManageStudent.UseVisualStyleBackColor = true;
             // 
-            // NavBtnRegister
+            // BtnAddStudent
             // 
-            this.NavBtnRegister.FlatAppearance.BorderSize = 0;
-            this.NavBtnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NavBtnRegister.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavBtnRegister.ForeColor = System.Drawing.Color.White;
-            this.NavBtnRegister.Location = new System.Drawing.Point(-1, 0);
-            this.NavBtnRegister.Name = "NavBtnRegister";
-            this.NavBtnRegister.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.NavBtnRegister.Size = new System.Drawing.Size(191, 45);
-            this.NavBtnRegister.TabIndex = 3;
-            this.NavBtnRegister.Text = "Register";
-            this.NavBtnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NavBtnRegister.UseVisualStyleBackColor = true;
-            this.NavBtnRegister.Click += new System.EventHandler(this.NavBtnRegister_Click);
+            this.BtnAddStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnAddStudent.FlatAppearance.BorderSize = 0;
+            this.BtnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAddStudent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddStudent.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnAddStudent.IconChar = FontAwesome.Sharp.IconChar.Add;
+            this.BtnAddStudent.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnAddStudent.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnAddStudent.IconSize = 30;
+            this.BtnAddStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAddStudent.Location = new System.Drawing.Point(0, 0);
+            this.BtnAddStudent.Name = "BtnAddStudent";
+            this.BtnAddStudent.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.BtnAddStudent.Size = new System.Drawing.Size(197, 52);
+            this.BtnAddStudent.TabIndex = 0;
+            this.BtnAddStudent.Text = "Add";
+            this.BtnAddStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAddStudent.UseVisualStyleBackColor = true;
             // 
-            // nav_btn_student
+            // BtnStudent
             // 
-            this.nav_btn_student.FlatAppearance.BorderSize = 0;
-            this.nav_btn_student.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.nav_btn_student.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nav_btn_student.ForeColor = System.Drawing.Color.White;
-            this.nav_btn_student.Location = new System.Drawing.Point(0, 142);
-            this.nav_btn_student.Name = "nav_btn_student";
-            this.nav_btn_student.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.nav_btn_student.Size = new System.Drawing.Size(191, 45);
-            this.nav_btn_student.TabIndex = 0;
-            this.nav_btn_student.Text = "Student";
-            this.nav_btn_student.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.nav_btn_student.UseVisualStyleBackColor = true;
+            this.BtnStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnStudent.FlatAppearance.BorderSize = 0;
+            this.BtnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnStudent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStudent.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnStudent.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.BtnStudent.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnStudent.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnStudent.IconSize = 30;
+            this.BtnStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnStudent.Location = new System.Drawing.Point(0, 0);
+            this.BtnStudent.Name = "BtnStudent";
+            this.BtnStudent.Size = new System.Drawing.Size(197, 53);
+            this.BtnStudent.TabIndex = 0;
+            this.BtnStudent.Text = "Student";
+            this.BtnStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnStudent.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // LeftPanelTop
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(191, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(609, 68);
-            this.panel4.TabIndex = 1;
+            this.LeftPanelTop.Controls.Add(this.pictureBox1);
+            this.LeftPanelTop.Controls.Add(this.LeftPanelPicBoxLogo);
+            this.LeftPanelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LeftPanelTop.Location = new System.Drawing.Point(0, 0);
+            this.LeftPanelTop.Name = "LeftPanelTop";
+            this.LeftPanelTop.Size = new System.Drawing.Size(197, 120);
+            this.LeftPanelTop.TabIndex = 1;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(191, 68);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(609, 377);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.Size = new System.Drawing.Size(162, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // panel5
+            // LeftPanelPicBoxLogo
             // 
-            this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Controls.Add(this.tb_female_count);
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Controls.Add(this.tb_male_count);
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(191, 451);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(609, 100);
-            this.panel5.TabIndex = 3;
+            this.LeftPanelPicBoxLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LeftPanelPicBoxLogo.Location = new System.Drawing.Point(0, 0);
+            this.LeftPanelPicBoxLogo.Name = "LeftPanelPicBoxLogo";
+            this.LeftPanelPicBoxLogo.Size = new System.Drawing.Size(197, 120);
+            this.LeftPanelPicBoxLogo.TabIndex = 0;
+            this.LeftPanelPicBoxLogo.TabStop = false;
+            // 
+            // TopPanel
+            // 
+            this.TopPanel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.TopPanel.Controls.Add(this.label1);
+            this.TopPanel.Controls.Add(this.iconPictureBox1);
+            this.TopPanel.Controls.Add(this.PanelUserControls);
+            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopPanel.Location = new System.Drawing.Point(197, 0);
+            this.TopPanel.Name = "TopPanel";
+            this.TopPanel.Size = new System.Drawing.Size(667, 67);
+            this.TopPanel.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 41);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(59, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Male";
+            this.label1.Size = new System.Drawing.Size(66, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Home";
             // 
-            // tb_male_count
+            // iconPictureBox1
             // 
-            this.tb_male_count.Location = new System.Drawing.Point(103, 41);
-            this.tb_male_count.Name = "tb_male_count";
-            this.tb_male_count.Size = new System.Drawing.Size(49, 23);
-            this.tb_male_count.TabIndex = 1;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.Location = new System.Drawing.Point(22, 19);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox1.TabIndex = 2;
+            this.iconPictureBox1.TabStop = false;
             // 
-            // tb_female_count
+            // PanelUserControls
             // 
-            this.tb_female_count.Location = new System.Drawing.Point(252, 43);
-            this.tb_female_count.Name = "tb_female_count";
-            this.tb_female_count.Size = new System.Drawing.Size(49, 23);
-            this.tb_female_count.TabIndex = 3;
+            this.PanelUserControls.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelUserControls.Controls.Add(this.BtnMinimize);
+            this.PanelUserControls.Controls.Add(this.BtnMaximize);
+            this.PanelUserControls.Controls.Add(this.BtnClose);
+            this.PanelUserControls.Location = new System.Drawing.Point(594, 3);
+            this.PanelUserControls.Name = "PanelUserControls";
+            this.PanelUserControls.Size = new System.Drawing.Size(73, 16);
+            this.PanelUserControls.TabIndex = 1;
+            // 
+            // BtnMinimize
+            // 
+            this.BtnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimize.Image")));
+            this.BtnMinimize.Location = new System.Drawing.Point(0, 0);
+            this.BtnMinimize.Name = "BtnMinimize";
+            this.BtnMinimize.Size = new System.Drawing.Size(21, 16);
+            this.BtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMinimize.TabIndex = 2;
+            this.BtnMinimize.TabStop = false;
+            // 
+            // BtnMaximize
+            // 
+            this.BtnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMaximize.Image = ((System.Drawing.Image)(resources.GetObject("BtnMaximize.Image")));
+            this.BtnMaximize.Location = new System.Drawing.Point(21, 0);
+            this.BtnMaximize.Name = "BtnMaximize";
+            this.BtnMaximize.Size = new System.Drawing.Size(27, 16);
+            this.BtnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMaximize.TabIndex = 1;
+            this.BtnMaximize.TabStop = false;
+            // 
+            // BtnClose
+            // 
+            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnClose.Image = ((System.Drawing.Image)(resources.GetObject("BtnClose.Image")));
+            this.BtnClose.Location = new System.Drawing.Point(48, 0);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(25, 16);
+            this.BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnClose.TabIndex = 0;
+            this.BtnClose.TabStop = false;
+            // 
+            // PanelContent
+            // 
+            this.PanelContent.BackColor = System.Drawing.Color.MidnightBlue;
+            this.PanelContent.Controls.Add(this.label2);
+            this.PanelContent.Controls.Add(this.pictureBox2);
+            this.PanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContent.Location = new System.Drawing.Point(197, 67);
+            this.PanelContent.Name = "PanelContent";
+            this.PanelContent.Size = new System.Drawing.Size(667, 422);
+            this.PanelContent.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(185, 43);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(175, 323);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 21);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Female";
+            this.label2.Size = new System.Drawing.Size(301, 30);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Student Management System";
             // 
-            // UiMain
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(158, 53);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(306, 246);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 551);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
-            this.Name = "UiMain";
-            this.Palette = this.kryptonPalette1;
-            this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.ClientSize = new System.Drawing.Size(864, 489);
+            this.Controls.Add(this.PanelContent);
+            this.Controls.Add(this.TopPanel);
+            this.Controls.Add(this.LeftPanel);
+            this.Name = "Main";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Management System";
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.LeftPanel.ResumeLayout(false);
+            this.LeftPanel.PerformLayout();
+            this.LeftPanelCourse.ResumeLayout(false);
+            this.PanelCourse.ResumeLayout(false);
+            this.LeftPanelStudent.ResumeLayout(false);
+            this.PanelStudent.ResumeLayout(false);
+            this.LeftPanelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftPanelPicBoxLogo)).EndInit();
+            this.TopPanel.ResumeLayout(false);
+            this.TopPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.PanelUserControls.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnClose)).EndInit();
+            this.PanelContent.ResumeLayout(false);
+            this.PanelContent.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button nav_btn_student;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button NavBtnRegister;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel5;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_female_count;
-        private System.Windows.Forms.Label label2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_male_count;
+        private System.Windows.Forms.Panel LeftPanel;
+        private System.Windows.Forms.Panel LeftPanelTop;
+        private System.Windows.Forms.Panel LeftPanelStudent;
+        private FontAwesome.Sharp.IconButton BtnStudent;
+        private System.Windows.Forms.Panel LeftPanelCourse;
+        private FontAwesome.Sharp.IconButton BtnCourse;
+        private System.Windows.Forms.PictureBox LeftPanelPicBoxLogo;
+        private System.Windows.Forms.Panel TopPanel;
+        private System.Windows.Forms.Panel PanelUserControls;
         private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private System.Windows.Forms.Panel PanelCourse;
+        private FontAwesome.Sharp.IconButton BtnManageCourse;
+        private FontAwesome.Sharp.IconButton BtnAddCourse;
+        private System.Windows.Forms.Panel PanelStudent;
+        private FontAwesome.Sharp.IconButton BtnManageStudent;
+        private FontAwesome.Sharp.IconButton BtnAddStudent;
+        private System.Windows.Forms.Panel PanelContent;
+        private System.Windows.Forms.PictureBox BtnClose;
+        private System.Windows.Forms.PictureBox BtnMinimize;
+        private System.Windows.Forms.PictureBox BtnMaximize;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
