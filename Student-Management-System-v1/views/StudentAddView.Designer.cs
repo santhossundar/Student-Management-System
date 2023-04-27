@@ -1,6 +1,6 @@
 ﻿namespace Student_Management_System_v1.forms
 {
-    partial class RegisterView
+    partial class StudentAddView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,25 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.stdNoTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.BtnAdd = new System.Windows.Forms.Button();
+            this.StdNoTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dobDateTimePicker = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.DOBDateTimePicker = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.addressCityTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.AddressCityTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.addressStreetTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.AddressStreetTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.addressNoiTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.AddressNoiTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.lastNameTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.LastNameTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.firstNameTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.FirstNameTxtBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -76,15 +75,15 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnAdd);
-            this.groupBox1.Controls.Add(this.stdNoTxtBox);
+            this.groupBox1.Controls.Add(this.BtnAdd);
+            this.groupBox1.Controls.Add(this.StdNoTxtBox);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.dobDateTimePicker);
+            this.groupBox1.Controls.Add(this.DOBDateTimePicker);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.lastNameTxtBox);
+            this.groupBox1.Controls.Add(this.LastNameTxtBox);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.firstNameTxtBox);
+            this.groupBox1.Controls.Add(this.FirstNameTxtBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 20);
@@ -94,22 +93,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Details";
             // 
-            // btnAdd
+            // BtnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(424, 176);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(84, 40);
-            this.btnAdd.TabIndex = 10;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.BtnAdd.Location = new System.Drawing.Point(424, 176);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(84, 40);
+            this.BtnAdd.TabIndex = 10;
+            this.BtnAdd.Text = "Add";
+            this.BtnAdd.UseVisualStyleBackColor = true;
             // 
-            // stdNoTxtBox
+            // StdNoTxtBox
             // 
-            this.stdNoTxtBox.Location = new System.Drawing.Point(121, 193);
-            this.stdNoTxtBox.Name = "stdNoTxtBox";
-            this.stdNoTxtBox.Size = new System.Drawing.Size(120, 23);
-            this.stdNoTxtBox.TabIndex = 8;
+            this.StdNoTxtBox.Location = new System.Drawing.Point(121, 193);
+            this.StdNoTxtBox.Name = "StdNoTxtBox";
+            this.StdNoTxtBox.Size = new System.Drawing.Size(120, 23);
+            this.StdNoTxtBox.TabIndex = 8;
             // 
             // label7
             // 
@@ -121,12 +119,12 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "Student No";
             // 
-            // dobDateTimePicker
+            // DOBDateTimePicker
             // 
-            this.dobDateTimePicker.Location = new System.Drawing.Point(92, 133);
-            this.dobDateTimePicker.Name = "dobDateTimePicker";
-            this.dobDateTimePicker.Size = new System.Drawing.Size(149, 21);
-            this.dobDateTimePicker.TabIndex = 6;
+            this.DOBDateTimePicker.Location = new System.Drawing.Point(92, 133);
+            this.DOBDateTimePicker.Name = "DOBDateTimePicker";
+            this.DOBDateTimePicker.Size = new System.Drawing.Size(149, 21);
+            this.DOBDateTimePicker.TabIndex = 6;
             // 
             // label6
             // 
@@ -140,11 +138,11 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.addressCityTxtBox);
+            this.groupBox2.Controls.Add(this.AddressCityTxtBox);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.addressStreetTxtBox);
+            this.groupBox2.Controls.Add(this.AddressStreetTxtBox);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.addressNoiTxtBox);
+            this.groupBox2.Controls.Add(this.AddressNoiTxtBox);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(275, 21);
@@ -154,12 +152,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Address";
             // 
-            // addressCityTxtBox
+            // AddressCityTxtBox
             // 
-            this.addressCityTxtBox.Location = new System.Drawing.Point(106, 96);
-            this.addressCityTxtBox.Name = "addressCityTxtBox";
-            this.addressCityTxtBox.Size = new System.Drawing.Size(100, 23);
-            this.addressCityTxtBox.TabIndex = 5;
+            this.AddressCityTxtBox.Location = new System.Drawing.Point(106, 96);
+            this.AddressCityTxtBox.Name = "AddressCityTxtBox";
+            this.AddressCityTxtBox.Size = new System.Drawing.Size(100, 23);
+            this.AddressCityTxtBox.TabIndex = 5;
             // 
             // label5
             // 
@@ -171,12 +169,12 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "City";
             // 
-            // addressStreetTxtBox
+            // AddressStreetTxtBox
             // 
-            this.addressStreetTxtBox.Location = new System.Drawing.Point(106, 67);
-            this.addressStreetTxtBox.Name = "addressStreetTxtBox";
-            this.addressStreetTxtBox.Size = new System.Drawing.Size(100, 23);
-            this.addressStreetTxtBox.TabIndex = 3;
+            this.AddressStreetTxtBox.Location = new System.Drawing.Point(106, 67);
+            this.AddressStreetTxtBox.Name = "AddressStreetTxtBox";
+            this.AddressStreetTxtBox.Size = new System.Drawing.Size(100, 23);
+            this.AddressStreetTxtBox.TabIndex = 3;
             // 
             // label4
             // 
@@ -188,12 +186,12 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Street";
             // 
-            // addressNoiTxtBox
+            // AddressNoiTxtBox
             // 
-            this.addressNoiTxtBox.Location = new System.Drawing.Point(106, 38);
-            this.addressNoiTxtBox.Name = "addressNoiTxtBox";
-            this.addressNoiTxtBox.Size = new System.Drawing.Size(100, 23);
-            this.addressNoiTxtBox.TabIndex = 1;
+            this.AddressNoiTxtBox.Location = new System.Drawing.Point(106, 38);
+            this.AddressNoiTxtBox.Name = "AddressNoiTxtBox";
+            this.AddressNoiTxtBox.Size = new System.Drawing.Size(100, 23);
+            this.AddressNoiTxtBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -205,12 +203,12 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "No";
             // 
-            // lastNameTxtBox
+            // LastNameTxtBox
             // 
-            this.lastNameTxtBox.Location = new System.Drawing.Point(121, 72);
-            this.lastNameTxtBox.Name = "lastNameTxtBox";
-            this.lastNameTxtBox.Size = new System.Drawing.Size(120, 23);
-            this.lastNameTxtBox.TabIndex = 3;
+            this.LastNameTxtBox.Location = new System.Drawing.Point(121, 72);
+            this.LastNameTxtBox.Name = "LastNameTxtBox";
+            this.LastNameTxtBox.Size = new System.Drawing.Size(120, 23);
+            this.LastNameTxtBox.TabIndex = 3;
             // 
             // label2
             // 
@@ -222,12 +220,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Last Name";
             // 
-            // firstNameTxtBox
+            // FirstNameTxtBox
             // 
-            this.firstNameTxtBox.Location = new System.Drawing.Point(121, 39);
-            this.firstNameTxtBox.Name = "firstNameTxtBox";
-            this.firstNameTxtBox.Size = new System.Drawing.Size(120, 23);
-            this.firstNameTxtBox.TabIndex = 1;
+            this.FirstNameTxtBox.Location = new System.Drawing.Point(121, 39);
+            this.FirstNameTxtBox.Name = "FirstNameTxtBox";
+            this.FirstNameTxtBox.Size = new System.Drawing.Size(120, 23);
+            this.FirstNameTxtBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -260,14 +258,15 @@
             this.kryptonTextBox5.Size = new System.Drawing.Size(143, 20);
             this.kryptonTextBox5.TabIndex = 6;
             // 
-            // Register
+            // StudentAddView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 320);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Register";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "StudentAddView";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
@@ -287,21 +286,21 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnAdd;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox stdNoTxtBox;
+        private System.Windows.Forms.Button BtnAdd;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox StdNoTxtBox;
         private System.Windows.Forms.Label label7;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dobDateTimePicker;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker DOBDateTimePicker;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox addressCityTxtBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox AddressCityTxtBox;
         private System.Windows.Forms.Label label5;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox addressStreetTxtBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox AddressStreetTxtBox;
         private System.Windows.Forms.Label label4;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox addressNoiTxtBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox AddressNoiTxtBox;
         private System.Windows.Forms.Label label3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox lastNameTxtBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox LastNameTxtBox;
         private System.Windows.Forms.Label label2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox firstNameTxtBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox FirstNameTxtBox;
         private System.Windows.Forms.Label label1;
     }
 }

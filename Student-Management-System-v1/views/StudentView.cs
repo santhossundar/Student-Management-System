@@ -13,7 +13,7 @@ namespace Student_Management_System_v1.views
     public partial class StudentView : Form, IStudentView
     {
         private static StudentView studentView;
-        public StudentView()
+        private StudentView()
         {
             InitializeComponent();
         }
@@ -23,12 +23,16 @@ namespace Student_Management_System_v1.views
             set => label1.Text = value; 
         }
 
-        public static StudentView GetInstance(Form parent)
+        public static StudentView GetInstance()
         {
             if(studentView == null)
             {
                 studentView = new StudentView();
-                
+                studentView.TopLevel = false;
+                studentView.BringToFront();
+                studentView.FormBorderStyle = FormBorderStyle.None;
+                studentView.Dock = DockStyle.Fill;
+                studentView.Show();
             } else
             {
                 if(studentView.WindowState == FormWindowState.Minimized)

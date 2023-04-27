@@ -2,7 +2,7 @@
 
 namespace Student_Management_System_v1.views
 {
-    public interface IRegisterView
+    public interface IStudentAddView
     {
         string FirstName { get; set; }
         string LastName { get; set; }
